@@ -24,5 +24,6 @@
 .playAgain {
   color: darkgrey;
   font-size: x-large;
-  text-align: center;
+  margin: auto;
+  display: block;
 }
