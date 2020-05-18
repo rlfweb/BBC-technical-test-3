@@ -1,3 +1,5 @@
+// TODO - simplify code to remove repetitions
+
 // Rock button
 document.querySelector(".rock").addEventListener("click", handleClickRock);
 
@@ -25,7 +27,7 @@ function handleClickScissors() {
 document
   .querySelector(".playAgain")
   .addEventListener("click", handleClickPlayAgain);
-
+// Refreshes the page and so resets the game
 function handleClickPlayAgain() {
-  alert("You clicked Play Again");
+  location.reload();
 }
