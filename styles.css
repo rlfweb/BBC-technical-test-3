@@ -1,0 +1,28 @@
+.container {
+  background-color: lightgray;
+  padding: 40px;
+}
+
+.btn {
+  font-size: xx-large;
+  padding: 10px;
+}
+
+.title {
+  color: black;
+  font-size: xxx-large;
+  text-align: center;
+}
+
+.playerHello {
+  color: black;
+  font-size: x-large;
+  text-align: center;
+  padding: 20px;
+}
+
+.playAgain {
+  color: darkgrey;
+  font-size: x-large;
+  text-align: center;
+}
