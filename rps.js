@@ -9,24 +9,24 @@ const playerChoice = "Scissors";
 console.log(`You chose ${playerChoice}.`);
 
 // Computer makes random choice. Log "The Computer Chose XX."
-const computerChoice = ["Rock", "Paper", "Scissors"];
-const randomChoice =
-  computerChoice[Math.floor(Math.random() * computerChoice.length)];
-console.log(`The computer chose ${randomChoice}.`);
+const randomChoice = ["Rock", "Paper", "Scissors"];
+const computerChoice =
+  randomChoice[Math.floor(Math.random() * randomChoice.length)];
+console.log(`The computer chose ${computerChoice}.`);
 
 // Response gives winner as a string.
-if (playerChoice === randomChoice) {
+if (playerChoice === computerChoice) {
   console.log("It's a tie!");
-} else if (playerChoice === "Rock" && randomChoice === "Scissors") {
+} else if (playerChoice === "Rock" && computerChoice === "Scissors") {
   console.log("Rock blunts Scissors. You win!");
-} else if (playerChoice === "Scissors" && randomChoice === "Paper") {
+} else if (playerChoice === "Scissors" && computerChoice === "Paper") {
   console.log("Scissors cut Paper. You win!");
-} else if (playerChoice === "Paper" && randomChoice === "Rock") {
+} else if (playerChoice === "Paper" && computerChoice === "Rock") {
   console.log("Paper covers Rock. You win!");
-} else if (playerChoice === "Scissors" && randomChoice === "Rock") {
+} else if (playerChoice === "Scissors" && computerChoice === "Rock") {
   console.log("Rock blunts Scissors. Computer wins!");
-} else if (playerChoice === "Paper" && randomChoice === "Scissors") {
+} else if (playerChoice === "Paper" && computerChoice === "Scissors") {
   console.log("Scissors cut Paper. Computer wins!");
-} else if (playerChoice === "Rock" && randomChoice === "Paper") {
+} else if (playerChoice === "Rock" && computerChoice === "Paper") {
   console.log("Paper covers Rock. Computer wins!");
 }
